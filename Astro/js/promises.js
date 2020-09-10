@@ -31,10 +31,10 @@ function generateHTML(data) {
 }
 
 btn.addEventListener('click', (event) => {
-  event.target.textContent = "Loading...";
+  event.target.textContent = 'Loading...';
 
   fetch(astrosUrl)
-    .then( response => response.json() )// to access we parse the data from json 
+    .then( response => response.json() )
     .then(getProfiles)
     .then(generateHTML)
     .catch( err => {

@@ -8,7 +8,7 @@ async function getJSON(url) {
   try {
     const response = await fetch(url);
     return await response.json();
-  } catch (error) {
+  } catch (error) {bs
     throw error;
   }
 }
@@ -22,7 +22,7 @@ async function getPeopleInSpace(url) {
 
     return { ...profileJSON, craft };
   });
-
+ 
   return Promise.all(profiles);
 }
 
